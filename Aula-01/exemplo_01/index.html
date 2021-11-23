@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula de JS de navegador</title>
+
+  <style>
+    body {
+      background-color: #333;
+      color: #fff;
+    }
+  </style>
+
+  <script type="module">
+    const materia = "JavaScript"
+    
+    const nomes = document.querySelectorAll('p')
+    const nome = document.querySelector('p')
+    const nomeDaMaria = document.querySelector('#name2')
+    // const nomeDaMaria = document.getElementById('name2')
+    // const nomeDaMaria = document.getElementsByClassName('teste')
+    const titulo = document.querySelector('h1')
+    // const titulo = document.getElementsByTagName('h1')
+    // const materiaSpan = document.querySelector('h1 > span')
+    // const materiaSpan = titulo.querySelector('span')
+    // const materiaSpan = titulo.querySelector('.materia')
+    const materiaSpan = titulo.querySelector('span[data-materia]')
+
+    materiaSpan.innerText = materia
+    
+    console.log(nomeDaMaria)
+    console.log(titulo)
+    console.log(nome)
+    console.log(nomes)
+
+  </script>
+</head>
+
+<body>
+  <span>Teste</span>
+  <!-- <h1>Aprendendo <span class="materia">CSS</span> no Browser</h1> -->
+  <h1>Aprendendo <span data-materia>CSS</span> no Browser</h1>
+  <p id="name2" class="teste">Maria da Silva</p>
+  <p id="name">Zé da Silva</p>
+</body>
+</html>
