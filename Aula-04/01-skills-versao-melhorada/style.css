@@ -21,6 +21,10 @@ li + li {
   text-decoration: line-through;
 }
 
+[data-done] {
+  text-decoration: line-through;
+}
+
 li span::first-letter {
   text-transform: capitalize;
 }
