@@ -1,3 +1,3 @@
-import { TicTacToe } from "./TicTacToe.js";
+import { TicTacToeBoard } from "./TicTacToe.js";
 
-const ticTacToe = new TicTacToe()
+const ticTacToeBoard = new TicTacToeBoard()
