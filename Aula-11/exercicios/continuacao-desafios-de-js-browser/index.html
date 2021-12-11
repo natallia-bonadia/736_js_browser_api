@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js" type="module"></script>
+</head>
+<body>
+    <ol data-challenges-container>
+      <li id='li-1'>
+          <h2>Duplique o elemento da caixa abaixo:</h2>
+          <button data-duplicate-button>Duplicar</button>
+          <p data-duplicate-text>Me duplique</p>
+      </li>
+
+      <li id='li-2'>
+          <h2>Remova o elemento da caixa abaixo:</h2>
+          <button data-delete-button>Deletar</button>
+          <p data-delete-text>Me delete</p>
+      </li>
+
+      <li id='li-3'>
+          <h2>Mude a cor do texto para steelblue:</h2>
+          <button data-color-button>Colorir</button>
+          <p data-color-text>Me deixe colorido</p>
+      </li>
+
+      <li id='li-4'>
+          <h2>Alterne o texto do elemento entre normal e itálico (font-style: italic):</h2>
+          <button data-italic-button>Tornar itálico</button>
+          <!-- <button>Tornar normal</button> -->
+          <p data-italic-text>Me deixe itálico</p>
+          <!-- <p>Me deixe normal</p> -->
+      </li>
+      
+      <li id='li-5'>
+          <h2>
+              No clique estilize o texto para cumprir os seguintes requisitos:<br>
+              - tamanho: 2.2rem (22px)<br>
+              - decorado com underline (text-decoration: underline)<br>
+              - cor de fundo: violet<br>
+              - cor do texto: white<br>
+              - padding: 0.4rem 1.2rem
+          </h2>
+          <button data-stylize-button>Estilizar</button>
+          <!-- <button>Remover estilização</button> -->
+          <p data-stylize-text>Me deixe estilizado</p>
+          <!-- <p>Me deixe sem estilo</p> -->
+      </li>
+      
+      <li id='li-6'>
+        <h2>Impeça que o formulário recarregue a página ao ser enviado</h2>
+        <form data-spoof-form>
+          <label for="spoof-username">Nome de Usuário</label>
+          <input id="spoof-username" type="text" />
+          <button type="submit">enviar</button>
+        </form>
+      </li>
+      
+      <li id='li-7'>
+          <h2>Altere a cor de fundo do body da página para cornflowerblue se o
+          checkbox estiver marcado</h2>
+          <label for="checkbox-color">Fundo cornflowerblue</label>
+          <input id="checkbox-color" type="checkbox" />
+      </li>
+      
+      <li id='li-8'>
+          <h2>Altere a cor de fundo do body da página para a cor escolhida no color
+          picker abaixo</h2>
+          <label for="checkbox-color">Selecione uma cor</label>
+          <input id="color-picker" type="color" />
+      </li>
+
+      <li id="li-9">
+        <h2>Permita a um usuário adicionar imagens uma após outra na div abaixo
+        digitando uma url</h2>
+        <label for="avatar-url-input">Digite ou cole uma URL de uma imagem</label>
+        <form>
+          <input id="avatar-url-input" type="url" />
+          <button>Adicionar foto</button>
+        </form>
+        <div data-photos-container></div>
+      </li>
+
+      <li id="li-10">
+        <h2>Permita a um usuário aumentar ou reduzir a contagem abaixo clicando
+        nos botões correspondentes</h2>
+        <button data-increase-count>Aumentar contagem</button>
+        <button data-decrease-count>Diminuir contagem</button>
+        <p>Contagem: <strong data-count>0</strong></p>
+      </li>
+      
+    </ol>
+</body>
+</html>
